@@ -1,1 +1,1 @@
-alert(document.getElementById("side-nav").children);
+// alert(document.getElementById("side-nav").children);

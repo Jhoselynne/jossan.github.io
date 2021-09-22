@@ -1,3 +1,7 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
 header {
     font-family: 'Times New Roman', Times, serif;
 }
@@ -38,9 +42,10 @@ header {
 
 body {
     background-image: url(https://www.fykmag.com/wp-content/uploads/2017/01/Steinway_Bro_S26_27_NEU-ab-1600x1097.jpg);
-    background-size: auto;
+    width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-color: black;
+    /* background-color: black; */
     text-align: center;
 }
 
@@ -51,6 +56,7 @@ body {
     list-style: none;
     color:ivory;
     font-size: 20px;
+    border: 2px solid white;
 }
 
 .side-nav li {
@@ -70,4 +76,6 @@ body {
 .side-nav a:hover {
     color: rgb(255, 153, 0);
 }
-
+footer{
+    color: white;
+}
