@@ -1,81 +1,122 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
-header {
-    font-family: 'Times New Roman', Times, serif;
+
+body {
+    background-color: rgb(134, 134, 247);
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-repeat: no-repeat; */
 }
+
+header {
+    background-color: black;
+    border-radius: 45px;
+    padding-bottom: 10px;
+    height: 120px;
+
+    /* Important for children to respect parent border and positioning */
+    position: relative;
+}
+
+#music-is-life {
+    width: fit-content;
+    position: absolute;
+    margin-top: 1rem;
+    
+    /* Enable overlaping */
+    z-index: 1;
+    
+    /* Vertical positioning*/
+    top: 0px;
+
+    /* Horizontal positioning */
+    /* Center the div with title and the G-clef */
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #music-life {
     color: rgb(252, 239, 180);
     font-size: 4rem;
-    margin: 0%;
-    padding-top: 2rem;    
-    display: inline; 
-}
-
-#my-G-clef {
     display: inline;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #G-clef {
     width: 4em;
-    margin-top: 1rem;  
 }
 
-.top-nav{
+.top-nav {
+    height: 30px;
     width: fit-content;
-}
+    list-style: none;
 
-.top-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    border:solid white;
-    border-radius: 3px;
-    padding: 10px;
+    /* Positioning and overlaping */
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    bottom: 20px;
 }
 
 .top-nav li{
     display: inline;
-    margin-right: 2rem;
+    margin-right: 30px;
 }
 
-body {
-    background-image: url(https://www.fykmag.com/wp-content/uploads/2017/01/Steinway_Bro_S26_27_NEU-ab-1600x1097.jpg);
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-color: black; */
-    text-align: center;
+.top-nav a {
+    color: hotpink;
+    border:2px solid greenyellow;
+    font-size: 25px;
+    padding: 10px;
 }
 
-.side-nav {
-    margin-top: 0%;
-    padding-top: 1rem;
-    position: relative;
+#content {
+    display: flex;
+    /* background-color: yellow; */
+}
+
+nav {
+    background-color: red;
+}
+
+#side-list {
+    padding: 30px;
     list-style: none;
     color:ivory;
     font-size: 20px;
-    border: 2px solid white;
+    /* background-color: teal; */
 }
 
-.side-nav li {
+article {
+    flex: 1;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+#side-list li {
     width: fit-content;
+    padding: 5px;
 }
 
-.side-nav li:hover {
+#side-list li:hover {
     color: rgb(255, 153, 0);
-    cursor: pointer;    
+    cursor: pointer;
 }
 
-.side-nav a {
+#side-list a {
     color: burlywood;
-    font-display: unset;
 }
 
-.side-nav a:hover {
+#side-list a:hover {
     color: rgb(255, 153, 0);
 }
+
 footer{
     color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: end;
 }
