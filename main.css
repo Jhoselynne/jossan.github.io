@@ -18,13 +18,22 @@ header {
     margin-top: 1rem;  
 }
 
+.top-nav{
+    width: fit-content;
+}
+
 .top-nav a {
     color: white;
     text-decoration: none;
     font-size: 25px;
     border:solid white;
+    border-radius: 3px;
     padding: 10px;
-    display: inline-block;
+}
+
+.top-nav li{
+    display: inline;
+    margin-right: 2rem;
 }
 
 body {
@@ -35,29 +44,30 @@ body {
     text-align: center;
 }
 
-.main-nav {
+.side-nav {
     margin-top: 0%;
-    padding-top: 3%;
+    padding-top: 1rem;
     position: relative;
     list-style: none;
     color:ivory;
     font-size: 20px;
 }
 
-.main-nav li {
+.side-nav li {
     width: fit-content;
 }
 
-.main-nav li:hover {
+.side-nav li:hover {
     color: rgb(255, 153, 0);
     cursor: pointer;    
 }
-.main-nav a {
+
+.side-nav a {
     color: burlywood;
     font-display: unset;
 }
 
-.main-nav a:hover {
+.side-nav a:hover {
     color: rgb(255, 153, 0);
 }
 
