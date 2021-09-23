@@ -26,3 +26,27 @@ function gameStart() {
 }
 
 gameStart();
+
+// ##### document + event listener #####
+
+document.getElementById("knapp1").addEventListener("click", function () {
+    console.log("Rätt");
+    document.getElementById("answer").innerHTML="<h2> Rätt svar! </h2>";
+})
+
+document.getElementById("knapp2").addEventListener("click", function () {
+    console.log("Fel");
+    document.getElementById("answer").innerHTML="<h2> Fel svar :( </h2>";
+})
+
+// ##### FOR-LOOP #####
+
+function repeat() {
+    var my_reps = document.getElementById("reps").value;
+    console.log("Antal gånger att upprepa: " + my_reps);
+
+    for (let i = 0; i < my_reps; i++) {
+        console.log("Hej");
+        document.getElementById("reps_answer").innerHTML += "Hej ";
+    }
+}
