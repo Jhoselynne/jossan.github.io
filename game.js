@@ -1,3 +1,4 @@
+// Funktionsdeklaration
 function guess() {
     var guessedNumber = document.getElementById("guessedNumber").value;
     var secretNumber = sessionStorage.getItem('secretNumber');
@@ -19,12 +20,14 @@ function guess() {
     document.getElementById("result").innerHTML = counterMessage + "<br />" + hintMessage;
 }
 
+// Funktionsdeklaration
 function gameStart() {
     const generatedNumber = Math.floor(Math.random() * 100);
     sessionStorage.setItem('secretNumber', generatedNumber);
     sessionStorage.setItem('counter', 0);
 }
 
+// Funktionsanrop
 gameStart();
 
 // ##### document + event listener #####
@@ -48,5 +51,16 @@ function repeat() {
     for (let i = 0; i < my_reps; i++) {
         console.log("Hej");
         document.getElementById("reps_answer").innerHTML += "Hej ";
+    }
+}
+
+// ##### TRY-CATCH #####
+
+function crash() {
+    try {
+        somethingThatCrashes;
+    } catch (error) {
+        console.error("My own defined error message");
+        console.error(error);
     }
 }
