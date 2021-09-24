@@ -73,6 +73,7 @@ header {
     border:2px solid white;
     font-size: 20px;
     padding: 10px;
+    border-radius: 8px;
 }
 p, h2 {
     color: rgb(139, 20, 20);
@@ -85,7 +86,6 @@ p, h2 {
 #side-list {
     padding: 30px;
     list-style: none;
-    /* color:ivory; */
     color: rgb(139, 20, 20);
     font-size: 17px;
     /* background-color: teal; */
@@ -122,11 +122,10 @@ article {
   }
   
 footer{
-    /* color: white; */
     color: rgb(139, 20, 20);
     background-color: black;
-    /* background-color: white; */
-    padding: 20px;
+    padding: 15px;
     text-align: end;
     border: 1px solid #343a40;
+    margin-top: 20px;
 }
